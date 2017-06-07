@@ -17,6 +17,7 @@
         <profile namespace="pegasus" key="style">condor</profile>
         <profile namespace="condor" key="universe">vanilla</profile>
         <profile namespace="condor" key="+ProjectName">"xenon1t"</profile>
+        <profile namespace="condor" key="+AccountingGroup">"group_opportunistic.xenon1t.MC"</profile>
         <profile namespace="condor" key="+WantExperimental">True</profile>
         <profile namespace="condor" key="+WANT_RCC_ciconnect">True</profile>
         <profile namespace="condor" key="requirements">
