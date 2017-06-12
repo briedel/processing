@@ -24,14 +24,14 @@
             (HAS_CVMFS_xenon_opensciencegrid_org) &amp;&amp;
               ( GLIDEIN_Site =!= "Comet" ) &amp;&amp;
             (((TARGET.GLIDEIN_ResourceName =!= MY.MachineAttrGLIDEIN_ResourceName1) ||
-              (RCC_Factory == "ciconnect")) &amp;&amp;
+              (RCC_Factory == "ciconnect") || (GLIDEIN_Site == "MWT2-COREOS")) &amp;&amp;
              ((TARGET.GLIDEIN_ResourceName =!= MY.MachineAttrGLIDEIN_ResourceName2) ||
-              (RCC_Factory == "ciconnect")) &amp;&amp;
+              (RCC_Factory == "ciconnect") || (GLIDEIN_Site == "MWT2-COREOS")) &amp;&amp;
              ((TARGET.GLIDEIN_ResourceName =!= MY.MachineAttrGLIDEIN_ResourceName3)  ||
-              (RCC_Factory == "ciconnect")) &amp;&amp;
+              (RCC_Factory == "ciconnect") || (GLIDEIN_Site == "MWT2-COREOS")) &amp;&amp;
              ((TARGET.GLIDEIN_ResourceName =!= MY.MachineAttrGLIDEIN_ResourceName4) ||
-              (RCC_Factory == "ciconnect"))) &amp;&amp;
-            (OSGVO_OS_STRING == "RHEL 6" || RCC_Factory == "ciconnect")
+              (RCC_Factory == "ciconnect")|| (GLIDEIN_Site == "MWT2-COREOS"))) &amp;&amp;
+            (OSGVO_OS_STRING == "RHEL 6" || RCC_Factory == "ciconnect" || (GLIDEIN_ResourceName == "MWT2-COREOS"))
         </profile>
     </site>
 
